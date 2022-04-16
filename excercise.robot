@@ -12,7 +12,7 @@ ${url}                  https://qentinelqi.github.io/shop/
 *** Test Cases ***
 Remove item from the cart
     [Documentation]     Select product and verify details on the page
-    [Tags]              Cart
+    [Tags]              Shopping Cart
 
     GoTo                ${url}
     VerifyText          The animal friendly clothing company
