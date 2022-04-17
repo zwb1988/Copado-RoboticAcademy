@@ -2,6 +2,7 @@
 
 Documentation           Test suite for Pace starter.
 Library                 QWeb
+Library                 ./libraries/my_custom_library.py
 Suite Setup             Open Browser    about:blank    chrome
 Suite Teardown          Close All Browsers
 
@@ -22,3 +23,9 @@ Remove item from the cart
     ClickItem           Decrement quantity
     VerifyText          Your cart is empty
     ClickText           Continue shopping
+
+Test custom library
+    [Documentation]     Test python library with print message
+    [Tags]              Test
+
+    Print message       Hello from custom Python keyword
